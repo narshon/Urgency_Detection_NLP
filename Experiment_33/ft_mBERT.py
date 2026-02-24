@@ -70,7 +70,7 @@ def huggingFaceMBERTTrain(model, tokenizer, train_data_url, dev_data_url):
     return trainer
 
 name = 'flax-community/bert-base-uncased-swahili'  # 'Davlan/bert-base-multilingual-cased-finetuned-swahili'
-access_token = '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'
+access_token = ''
 model = AutoModelForSequenceClassification.from_pretrained(name, use_auth_token=access_token)
 tokenizer = AutoTokenizer.from_pretrained(name, use_auth_token=access_token)
 
